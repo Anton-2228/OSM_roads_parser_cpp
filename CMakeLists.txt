@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.01)
+cmake_minimum_required(VERSION 3.28)
 project(OSM_roads_parser_cpp)
 include_directories("/home/anton/Desktop/OSM_roads_parser_cpp_act/rapidxml-1.13")
 include_directories("/home/anton/Desktop/OSM_roads_parser_cpp_act/CImg-3.4.0")
@@ -9,7 +9,7 @@ add_subdirectory(SDL-release-2.30.4)
 
 set(CMAKE_CXX_FLAGS "-Wall -Wextra")
 set(CMAKE_CXX_FLAGS_DEBUG "-g")
-set(CMAKE_CXX_FLAGS_RELEASE "-O3")
+set(CMAKE_CXX_FLAGS_RELEASE "-O3 -march=native -flto -ffast-math -funroll-loops -fomit-frame-pointer")
 
 set(CMAKE_CXX_STANDARD 20)
 
