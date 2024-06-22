@@ -1,7 +1,11 @@
 #include <functional>
 #include <../include/rapidxml_ext.hpp>
 #include <../include/osm_parser.h>
-#include <../include/render.h>
+// #include <../include/render.h>
+// #include <../include/render_stb.h>
+#include <sys/time.h>
+
+void render(string file, vector<unordered_map<string, vector<unordered_map<string, double>>>> &points, unordered_map<string, double> bounds);
 
 using namespace rapidxml;
 using namespace std;

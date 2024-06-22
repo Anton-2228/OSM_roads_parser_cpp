@@ -8,6 +8,7 @@
 #include <cmath>
 #define cimg_display 0
 // #include "/usr/include/ImageMagick-6/Magick++.h"
+#include "/usr/include/x86_64-linux-gnu/ImageMagick-6/magick/magick-baseconfig.h"
 // #include <Magick++.h>
 // #define cimg_use_jpeg
 // #define cimg_use_magick
